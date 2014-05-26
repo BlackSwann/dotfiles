@@ -1,0 +1,1 @@
+/home/blackswan/.vim/janus/vim/gvimrc
