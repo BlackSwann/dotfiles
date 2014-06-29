@@ -8,6 +8,8 @@
 !------------------------------------------------------------------------------
 ! URXVT - Settings
 
+
+
 URxvt*geometry:                                 80x25
 URxvt*foreground:                               white
 URxvt*background:                               [95]#242C2F
@@ -24,6 +26,9 @@ URxvt*perl-ext-common:                          default,clipboard,url-select,key
 !URxvt*boldFont:                                 xft:terminusmodx:style=bold:hinting=true:pixelsize=9:antialias=false
 !URxvt*italicFont:                               xft:terminusmodx:style=italic:hinting=true:pixelsize=9:antialias=false
 !URxvt*boldItalicFont:                           xft:terminusmodx:style=bolditalic:hinting=true:pixelsize=9:antialias=false
+
+URxvt.font: xft:Inconsolata:pixelsize=15
+
 URxvt.underlineURLs:                            true
 
 
@@ -102,5 +107,5 @@ URxvt.colorUL: 					#9900CC
 
 *VT100.colorULMode:                             true
 *VT100.colorUL:                                 magenta
-*VT100.veryBoldColors:                          6
+*VT100.veryBoldColors:                          9
 

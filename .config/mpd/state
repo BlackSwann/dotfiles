@@ -1,0 +1,20 @@
+sw_volume: 100
+audio_device_state:1:My ALSA Device
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Musica/AC DC/Thunderstruck - Thunderstruck- ACDC Tribute.mp3
+1:01 - Hells Bells.mp3
+2:Top/Ordenar/Alt J -  something good.mp3
+3:Top/Ordenar/Alt J - dissolve me.mp3
+4:Top/Ordenar/alt j - matilda.mp3
+5:Top/Ordenar/Alt J - taro.mp3
+6:Top/Ordenar/Alt j - breezeblocks.mp3
+7:Top/Ordenar/alt j - matilda.mp3
+playlist_end
