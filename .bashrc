@@ -60,10 +60,10 @@ alias ls='ls --color=auto'
 
 
 # Color support
-###if [ -x /usr/bin/dircolors ]; then
- ###   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-###    alias ls='ls --color=auto'
-###fi
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+fi
 
 
 #Auto complete on terminal
@@ -72,29 +72,29 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Color man pages
-###man() {
-###	env \
-###		LESS_TERMCAP_mb=$(printf "\e[38;5;128m") \
-###		LESS_TERMCAP_md=$(printf "\e[38;5;128m") \
-###		LESS_TERMCAP_me=$(printf "\e[0m") \
-###		LESS_TERMCAP_se=$(printf "\e[0m") \
-###		LESS_TERMCAP_so=$(printf "\e[38;5;45m") \
-###		LESS_TERMCAP_ue=$(printf "\e[0m") \
-###		LESS_TERMCAP_us=$(printf "\e[1;32m") \
-###			man "$@"
-###}
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[38;5;128m") \
+		LESS_TERMCAP_md=$(printf "\e[38;5;128m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[38;5;45m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+			man "$@"
+}
 
 
 
-###force_color_prompt=yes
+force_color_prompt=yes
 
-###if [ -n "$force_color_prompt" ]; then
-###    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-###	color_prompt=yes
-###    else
-###	color_prompt=
-###    fi
-###fi
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
 
 
 extract () {
@@ -131,7 +131,7 @@ import -window root /tmp/`date +%F_%H%M%S_%N`.jpg
 
 
 
-###PS1="\[\e[38;5;45m\]┌─[\[\e[38;5;128m\]\t\[\e[38;5;45m\]]──[\[\e[38;5;128m\u\e[38;5;45m\]]──[\[\e[38;5;128m\]${HOSTNAME%%.*}\[\e[38;5;45m\]]:\w$\[\e[01;31m\]\n\[\e[38;5;45m\]└──\[\e[01;37m\](\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/usr/bin/ls -lah | /usr/bin/grep -m 1 total | 
+PS1="\[\e[38;5;45m\]┌─[\[\e[38;5;128m\]\t\[\e[38;5;45m\]]──[\[\e[38;5;128m\u\e[38;5;45m\]]──[\[\e[38;5;128m\]${HOSTNAME%%.*}\[\e[38;5;45m\]]:\w$\[\e[01;31m\]\n\[\e[38;5;45m\]└──\[\e[01;37m\](\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/usr/bin/ls -lah | /usr/bin/grep -m 1 total | 
 /usr/bin/sed 's/total //')b\[\e[01;37m\])>>\[\e[0m\]"
 #
 
