@@ -1,0 +1,25 @@
+<monitors version="1">
+  <configuration>
+    <clone>no</clone>
+    <output name="LVDS1">
+      <vendor>HSD</vendor>
+      <product>HSD140PHW1</product>
+      <serial>0x00006b70</serial>
+    </output>
+    <output name="VGA1">
+      <vendor>SAM</vendor>
+      <product>SyncMaster</product>
+      <serial>H9LQ603542</serial>
+      <width>1680</width>
+      <height>1050</height>
+      <rate>59.883251190185547</rate>
+      <x>0</x>
+      <y>0</y>
+      <rotation>normal</rotation>
+      <reflect_x>no</reflect_x>
+      <reflect_y>no</reflect_y>
+      <primary>yes</primary>
+      <presentation>no</presentation>
+    </output>
+  </configuration>
+</monitors>
