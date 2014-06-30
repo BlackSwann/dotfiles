@@ -9,7 +9,7 @@
 .bash_logout
 .bash_profile
 .cache/
-
+.oh-my-zsh/*
 .config/autostart/
 .config/calibre/
 .config/dconf/
@@ -101,3 +101,9 @@
 /.smartgit/
 /.w3m/
 /.set/
+/.ICEauthority
+/.esd_auth
+/.zcompdump-BlackSwan-5.0.5
+/.zsh-update
+/.zsh_history
+/.Trash/
