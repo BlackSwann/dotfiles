@@ -24,7 +24,7 @@
 .config/chromium/
 .config/geany/
 .config/gtk-3.0/
-
+.dropbox-master/
 .config/libreoffice/
 .gnome/
 .config/pulse/
@@ -97,3 +97,7 @@
 .zenmap/
 .zlogin
 .zshrc
+/.bundler/
+/.smartgit/
+/.w3m/
+/.set/
