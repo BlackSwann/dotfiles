@@ -14,7 +14,7 @@ eval "$(rbenv init -)"
 #export GEM_HOME=~/.gem/ruby/2.0.0
 #export PATH=$PATH:/home/blackswan/.gem/ruby/2.0.0/bin
 export EDITOR="vim"
-alias ls='ls --color=auto'
+###alias ls='ls --color=auto'
 alias home="cd ~/"
 alias upgrade='sudo pacman -Syu && yaourt -Syu'
 alias msfconsole='/usr/share/metasploit/msfconsole'
@@ -51,7 +51,7 @@ alias get='git '
 
 
 
-alias ls='ls --color=auto'
+
 #PS1='[\u@\h \W]\$ '
 
 #if [ "$PSl" ]; then
@@ -132,7 +132,7 @@ import -window root /tmp/`date +%F_%H%M%S_%N`.jpg
 
 
 ###PS1="\[\e[38;5;45m\]┌─[\[\e[38;5;128m\]\t\[\e[38;5;45m\]]──[\[\e[38;5;128m\u\e[38;5;45m\]]──[\[\e[38;5;128m\]${HOSTNAME%%.*}\[\e[38;5;45m\]]:\w$\[\e[01;31m\]\n\[\e[38;5;45m\]└──\[\e[01;37m\](\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/usr/bin/ls -lah | /usr/bin/grep -m 1 total | 
-/usr/bin/sed 's/total //')b\[\e[01;37m\])>>\[\e[0m\]"
+###/usr/bin/sed 's/total //')b\[\e[01;37m\])>>\[\e[0m\]"
 #
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
