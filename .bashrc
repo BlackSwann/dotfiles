@@ -2,6 +2,10 @@
 # ~/.bashrc
 #
 #export TERM="rxvt-unicode-256color"
+
+export TERM=xterm-256color
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -20,7 +24,7 @@ alias upgrade='sudo pacman -Syu && yaourt -Syu'
 alias msfconsole='/usr/share/metasploit/msfconsole'
 alias proyecto='cd /home/blackswan/Programacion/Ruby/proyecto/securityportsinfo'
 
-
+echo 'PASANDO POR .BASHRC'
 #ALIASES GIT
 
 alias gs='git status '

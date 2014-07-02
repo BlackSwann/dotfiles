@@ -2,4 +2,5 @@
 xrdb -load ~/.Xresources &
 
 
-exec awesome
+#exec awesome
+exec gnome-session

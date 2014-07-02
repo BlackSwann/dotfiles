@@ -15,13 +15,13 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
 
+DISABLE_AUTO_UPDATE="true"
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -30,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -48,9 +48,9 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git rails archlinux tmux)
 
-source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -72,3 +72,85 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+#
+#MI CONFIGURACION
+#
+#
+
+export PATH=$PATH:/usr/share/metasploit:/usr/bin/vendor_perl/exiftool:/usr/share/ruby1.9/bin:/home/blackswan/netbeans-8.0/bin/:/home/blackswan/.rbenv/bin
+export MSF_DATABASE_CONFIG=/usr/share/metasploit/database.yml
+
+alias home="cd ~/"
+alias upgrade='sudo pacman -Syu && yaourt -Syu'
+alias msfconsole='/usr/share/metasploit/msfconsole'
+alias proyecto='cd /home/blackswan/Programacion/Ruby/proyecto/securityportsinfo'
+
+export EDITOR='vim'
+
+#ALIASES GIT
+
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+#alias gc='git commit'
+alias gc='git commit -a -m'
+#alias gca='git commit -a'
+#alias gca='git commit -a'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias gp='git pull'
+alias push='git push'
+alias pushm='git push origin master'
+alias gr='git rebase '
+alias gm='git merge '
+
+
+alias got='git '
+alias get='git '
+
+
+# FIN ALIASES GIT
+
+extract () {
+    if [ -f $1 ] ; then
+      case $1 in
+        *.tar.bz2)   tar xjf $1     ;;
+        *.tar.gz)    tar xzf $1     ;;
+        *.bz2)       bunzip2 $1     ;;
+        *.rar)       unrar e $1     ;;
+        *.gz)        gunzip $1      ;;
+        *.tar)       tar xf $1      ;;
+        *.tbz2)      tar xjf $1     ;;
+        *.tgz)       tar xzf $1     ;;
+        *.zip)       unzip $1       ;;
+        *.Z)         uncompress $1  ;;
+        *.7z)        7z x $1        ;;
+        *)     echo "'$1' cannot be extracted via extract()" ;;
+         esac
+     else
+         echo "'$1' is not a valid file"
+     fi
+}
+
+
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+          export TERM='xterm-256color'
+        else
+                  export TERM='xterm-color'
+        fi
+
+# TMUX INIT
+[[ -z "$TMUX" ]] && exec tmux
+
+
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+
+eval "$(rbenv init -)"
+
+
+
+source $ZSH/oh-my-zsh.sh

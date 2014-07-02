@@ -13,7 +13,9 @@
 .config/autostart/
 .config/calibre/
 .config/dconf/
-
+.config/enchant/
+.config/epiphany/
+.config/spotify/
 .config/gconf/
 .config/gtk-2.0/
 .config/leafpad/
