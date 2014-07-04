@@ -24,7 +24,6 @@ alias upgrade='sudo pacman -Syu && yaourt -Syu'
 alias msfconsole='/usr/share/metasploit/msfconsole'
 alias proyecto='cd /home/blackswan/Programacion/Ruby/proyecto/securityportsinfo'
 
-echo 'PASANDO POR .BASHRC'
 #ALIASES GIT
 
 alias gs='git status '

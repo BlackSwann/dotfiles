@@ -16,6 +16,7 @@
 .config/enchant/
 .config/epiphany/
 .config/spotify/
+.config/totem/
 .config/gconf/
 .config/gtk-2.0/
 .config/leafpad/
