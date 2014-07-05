@@ -84,7 +84,7 @@ alias home="cd ~/"
 alias upgrade='sudo pacman -Syu && yaourt -Syu'
 alias msfconsole='/usr/share/metasploit/msfconsole'
 alias proyecto='cd /home/blackswan/Programacion/Ruby/proyecto/securityportsinfo'
-
+alias pf='cd /home/blackswan/proyectoFinal/SEVU'
 export EDITOR='vim'
 
 #ALIASES GIT
