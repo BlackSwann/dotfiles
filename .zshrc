@@ -151,6 +151,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 eval "$(rbenv init -)"
 
-
+#limitando CPU FREQ
+#echo 1600000 > '/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq'
+#echo 1600000 > '/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq'
 
 source $ZSH/oh-my-zsh.sh
